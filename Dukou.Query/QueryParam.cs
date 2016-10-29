@@ -1,4 +1,7 @@
-﻿namespace Dukou.Query
+﻿using System;
+using System.Globalization;
+
+namespace Dukou.Query
 {
     /// <summary>
     /// 查询参数
@@ -22,6 +25,36 @@
         /// 参数值
         /// </summary>
         public string Value { get; set; }
+
+        public DateTime DateTimeValue()
+        {
+            return DateTimeValue("yyyy-MM-dd HH:mm:ss");
+        }
+
+        public DateTime DateTimeValue(string format)
+        {
+            return DateTime.ParseExact(Value, format, CultureInfo.InvariantCulture, DateTimeStyles.None);
+        }
+
+        public decimal DecimalValue()
+        {
+            return decimal.Parse(Value);
+        }
+
+        public T EnumValue<T>()
+        {
+            return (T)Enum.Parse(typeof(T), Value);
+        }
+
+        public int IntValue()
+        {
+            return int.Parse(Value);
+        }
+
+        public long LongValue()
+        {
+            return long.Parse(Value);
+        }
 
         public override bool Equals(object obj)
         {

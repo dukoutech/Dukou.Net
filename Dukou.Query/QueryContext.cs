@@ -11,9 +11,9 @@ namespace Dukou.Query
         {
             Page = 1;
             PageSize = 20;
-            QueryParams = new List<QueryParam>();
+            OrderParams = new Dictionary<string, OrderParam>();
+            QueryParams = new Dictionary<string, QueryParam>();
             QueryResult = new List<TResult>();
-            OrderParams = new List<OrderParam>();
         }
 
         public int Page { get; set; }
@@ -22,12 +22,11 @@ namespace Dukou.Query
 
         public int TotalCount { get; set; }
 
-        public IList<QueryParam> QueryParams { get; set; }
+        public IDictionary<string, OrderParam> OrderParams { get; set; }
+
+        public IDictionary<string, QueryParam> QueryParams { get; set; }
 
         public IList<TResult> QueryResult { get; set; }
-
-        public IList<OrderParam> OrderParams { get; set; }
-
 
     }
 }
