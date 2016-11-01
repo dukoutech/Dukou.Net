@@ -82,18 +82,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Dukou.Query\Dukou.Query.csproj">
-      <Project>{B3438BA8-1DCF-41D4-B0CF-A48DC8965DCD}</Project>
+      <Project>{b3438ba8-1dcf-41d4-b0cf-a48dc8965dcd}</Project>
       <Name>Dukou.Query</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dukou.SH4\Dukou.SH4.csproj">
       <Project>{12befca5-cdec-4fae-a67f-365b6ba883a8}</Project>
       <Name>Dukou.SH4</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

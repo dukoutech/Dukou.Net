@@ -8,9 +8,7 @@ namespace Dukou.Query
     /// </summary>
     public class QueryParam
     {
-        public QueryParam() { }
-
-        public QueryParam(string name, string value)
+        public QueryParam(string name, object value)
         {
             this.Name = name;
             this.Value = value;
@@ -19,41 +17,21 @@ namespace Dukou.Query
         /// <summary>
         /// 参数名称
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         /// <summary>
         /// 参数值
         /// </summary>
-        public string Value { get; set; }
+        public object Value { get; private set; }
 
-        public DateTime DateTimeValue()
+        /// <summary>
+        /// 获取参数值
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public T GetValue<T>()
         {
-            return DateTimeValue("yyyy-MM-dd HH:mm:ss");
-        }
-
-        public DateTime DateTimeValue(string format)
-        {
-            return DateTime.ParseExact(Value, format, CultureInfo.InvariantCulture, DateTimeStyles.None);
-        }
-
-        public decimal DecimalValue()
-        {
-            return decimal.Parse(Value);
-        }
-
-        public T EnumValue<T>()
-        {
-            return (T)Enum.Parse(typeof(T), Value);
-        }
-
-        public int IntValue()
-        {
-            return int.Parse(Value);
-        }
-
-        public long LongValue()
-        {
-            return long.Parse(Value);
+            return (T)Value;
         }
 
         public override bool Equals(object obj)

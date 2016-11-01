@@ -13,25 +13,25 @@ namespace Dukou.Config.Dao.Impl
 {
     public class AppSettingDao : HibernateDao<AppSetting, string>, IAppSettingDao
     {
-        public void SelectByPage(QueryContext<AppSetting> context)
+        public void PagingQuery(PagingQueryContext<AppSetting> context)
         {
-            context.QueryResult = HibernateTemplate.ExecuteFind<AppSetting>((ISession session) => 
+            context.QueryResult = HibernateTemplate.ExecuteFind((ISession session) =>
             {
                 var criteria = session.CreateCriteria<AppSetting>("app");
 
                 if (context.QueryParams.ContainsKey("Name"))
                 {
-                    criteria.Add(Restrictions.Eq("app.Name", context.QueryParams["Name"].Value));
+                    criteria.Add(Restrictions.Eq("app.Name", context.GetQueryParam<string>("Name")));
                 }
 
                 if (context.QueryParams.ContainsKey("Type"))
                 {
-                    criteria.Add(Restrictions.Eq("app.Type", context.QueryParams["Type"].EnumValue<AppSettingType>()));
+                    criteria.Add(Restrictions.Eq("app.Type", context.GetQueryParam<AppSettingType>("Type")));
                 }
 
                 if (context.QueryParams.ContainsKey("Ids"))
                 {
-                    criteria.Add(Restrictions.In("app.Id", context.QueryParams["Ids"].Value.Split(',')));
+                    criteria.Add(Restrictions.In("app.Id", context.GetQueryParam<string>("Ids").Split(',')));
                 }
 
                 context.TotalCount = criteria.SetProjection(Projections.Count("app.Id")).UniqueResult<int>();

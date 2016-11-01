@@ -4,6 +4,6 @@ namespace Dukou.Query
 {
     public interface IPagingQueryDao<TResult>
     {
-        void SelectByPage(QueryContext<TResult> context);
+        void PagingQuery(PagingQueryContext<TResult> context);
     }
 }
