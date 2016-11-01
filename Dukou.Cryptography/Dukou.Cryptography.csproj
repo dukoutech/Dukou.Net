@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\_lib\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="ByteArrayExtension.cs" />
     <Compile Include="CryptographyExtension.cs" />
     <Compile Include="IKeyGenerator.cs" />

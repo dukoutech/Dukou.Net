@@ -72,6 +72,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\_lib\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Dao\IAppSettingDao.cs" />
     <Compile Include="Dao\Impl\AppSettingDao.cs" />
     <Compile Include="PO\AppSetting.cs" />
