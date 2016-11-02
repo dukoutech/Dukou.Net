@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Common.Logging" version="3.3.1.0" />
+      <dependency id="Dukou.SH4" version="$version$" />
+      <dependency id="NHibernate" version="4.0.4.4000" />
+      <dependency id="Spring.Data.NHibernate4" version="2.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\Dukou.Config.pdb" target="lib\net45" />
+  </files>
+</package>

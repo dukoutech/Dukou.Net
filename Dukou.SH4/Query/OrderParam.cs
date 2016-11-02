@@ -1,4 +1,4 @@
-﻿namespace Dukou.Query
+﻿namespace Dukou.SH4.Query
 {
     /// <summary>
     /// 排序参数

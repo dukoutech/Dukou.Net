@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SH4", "Dukou.SH4\Duko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Cryptography", "Dukou.Cryptography\Dukou.Cryptography.csproj", "{08BDEE00-166D-4A0D-81F7-00EC119340F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Query", "Dukou.Query\Dukou.Query.csproj", "{B3438BA8-1DCF-41D4-B0CF-A48DC8965DCD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Config", "Dukou.Config\Dukou.Config.csproj", "{D99433CB-8D69-49BE-A81B-08D7291DB988}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC694B54-7493-479A-9F05-8E0BD5CA8EFF}"
@@ -17,6 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_lib", "_lib", "{69D1C657-62EB-4660-AD6A-79CBF577F3B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nupkgs", "nupkgs", "{61E45A98-384B-4E05-BC38-61A763FE4C49}"
+	ProjectSection(SolutionItems) = preProject
+		nupkgs\nupkg.bat = nupkgs\nupkg.bat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +35,6 @@ Global
 		{08BDEE00-166D-4A0D-81F7-00EC119340F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08BDEE00-166D-4A0D-81F7-00EC119340F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08BDEE00-166D-4A0D-81F7-00EC119340F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3438BA8-1DCF-41D4-B0CF-A48DC8965DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3438BA8-1DCF-41D4-B0CF-A48DC8965DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3438BA8-1DCF-41D4-B0CF-A48DC8965DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3438BA8-1DCF-41D4-B0CF-A48DC8965DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D99433CB-8D69-49BE-A81B-08D7291DB988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D99433CB-8D69-49BE-A81B-08D7291DB988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99433CB-8D69-49BE-A81B-08D7291DB988}.Release|Any CPU.ActiveCfg = Release|Any CPU

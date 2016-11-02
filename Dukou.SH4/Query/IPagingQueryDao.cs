@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Dukou.Query
+namespace Dukou.SH4.Query
 {
     public interface IPagingQueryDao<TResult>
     {

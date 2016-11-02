@@ -1,13 +1,9 @@
 ﻿using Dukou.Config.PO;
-using Dukou.Query;
 using Dukou.SH4;
+using Dukou.SH4.Query;
 using NHibernate;
 using NHibernate.Criterion;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dukou.Config.Dao.Impl
 {

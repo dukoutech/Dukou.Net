@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dukou.Query
+namespace Dukou.SH4.Query
 {
     public interface IQueryDao<TResult>
     {

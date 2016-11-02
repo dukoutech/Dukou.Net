@@ -80,9 +80,16 @@
     <Compile Include="PO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyPlaceholderConfigurer.cs" />
+    <Compile Include="Query\IPagingQueryDao.cs" />
+    <Compile Include="Query\IQueryDao.cs" />
+    <Compile Include="Query\OrderParam.cs" />
+    <Compile Include="Query\PagingQueryContext.cs" />
+    <Compile Include="Query\QueryContext.cs" />
+    <Compile Include="Query\QueryParam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Dukou.SH4.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

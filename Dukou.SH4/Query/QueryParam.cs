@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Dukou.Query
+namespace Dukou.SH4.Query
 {
     /// <summary>
     /// 查询参数
