@@ -1,0 +1,11 @@
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Dukou.Cryptography.Test.dll
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Dukou.Cryptography.Test.pdb
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Dukou.Cryptography.dll
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Dukou.Core.dll
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Dukou.Cryptography.pdb
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\bin\Debug\Dukou.Core.pdb
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\obj\Debug\Dukou.Cryptography.Test.csprojResolveAssemblyReference.cache
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\obj\Debug\Dukou.Cryptography.Test.dll
+B:\Users\mattf\Source\Repos\DukouTech\Dukou.Net\Test\Dukou.Cryptography.Test\obj\Debug\Dukou.Cryptography.Test.pdb

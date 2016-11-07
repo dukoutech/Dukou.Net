@@ -21,6 +21,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nupkgs", "nupkgs", "{61E45A
 		nupkgs\nupkg.bat = nupkgs\nupkg.bat
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Core", "Dukou.Core\Dukou.Core.csproj", "{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1F51D92A-90BC-4312-A63D-77C13A67212E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Cryptography.Test", "Test\Dukou.Cryptography.Test\Dukou.Cryptography.Test.csproj", "{C1548DB5-5A45-4005-ACE7-C103D357F89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Cryptography.Client", "Dukou.Cryptography.Client\Dukou.Cryptography.Client.csproj", "{EE35963A-0CB4-42A2-A217-5F93EDE47AFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +47,23 @@ Global
 		{D99433CB-8D69-49BE-A81B-08D7291DB988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99433CB-8D69-49BE-A81B-08D7291DB988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D99433CB-8D69-49BE-A81B-08D7291DB988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1548DB5-5A45-4005-ACE7-C103D357F89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1548DB5-5A45-4005-ACE7-C103D357F89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1548DB5-5A45-4005-ACE7-C103D357F89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1548DB5-5A45-4005-ACE7-C103D357F89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE35963A-0CB4-42A2-A217-5F93EDE47AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE35963A-0CB4-42A2-A217-5F93EDE47AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE35963A-0CB4-42A2-A217-5F93EDE47AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE35963A-0CB4-42A2-A217-5F93EDE47AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1548DB5-5A45-4005-ACE7-C103D357F89E} = {1F51D92A-90BC-4312-A63D-77C13A67212E}
 	EndGlobalSection
 EndGlobal

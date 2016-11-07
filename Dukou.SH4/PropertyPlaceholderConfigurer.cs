@@ -1,4 +1,5 @@
 ﻿using Dukou.Cryptography;
+using Dukou.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -10,11 +11,11 @@ namespace Dukou.SH4
 {
     public class PropertyPlaceholderConfigurer : Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer
     {
-        private IKeyGenerator keyGenerator;
+        private IDESedeKeyAndIVGenerator keyAndIVGenerator;
 
-        public PropertyPlaceholderConfigurer(IKeyGenerator keyGenerator)
+        public PropertyPlaceholderConfigurer(IDESedeKeyAndIVGenerator keyGenerator)
         {
-            this.keyGenerator = keyGenerator;
+            this.keyAndIVGenerator = keyGenerator;
         }
 
         protected override string ResolvePlaceholder(string placeholder, NameValueCollection props)
@@ -25,7 +26,7 @@ namespace Dukou.SH4
             {
                 value = value.Substring(9, value.Length - 10);
 
-                value = value.DESedeDecrypt(keyGenerator.Generate()).ToString(StringFormatType.None);
+                value = value.DESedeDecrypt(keyAndIVGenerator.GenerateKey(), keyAndIVGenerator.GenerateIV()).ToString(StringFormatTypes.None);
 
                 props.Set(placeholder, value);
             }

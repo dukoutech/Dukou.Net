@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dukou.Cryptography
 {
-    public interface IKeyGenerator
+    public interface IMD5KeyAndSaltGenerator
     {
-        string Generate();
+        string GenerateKey();
+
+        string GenerateSalt();
     }
 }

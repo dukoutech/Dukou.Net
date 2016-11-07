@@ -93,6 +93,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dukou.Core\Dukou.Core.csproj">
+      <Project>{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}</Project>
+      <Name>Dukou.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dukou.Cryptography\Dukou.Cryptography.csproj">
       <Project>{08BDEE00-166D-4A0D-81F7-00EC119340F1}</Project>
       <Name>Dukou.Cryptography</Name>

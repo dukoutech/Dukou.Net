@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08BDEE00-166D-4A0D-81F7-00EC119340F1}</ProjectGuid>
+    <ProjectGuid>{16C89C48-98A7-46BD-88D5-C9BF8994B2E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dukou.Cryptography</RootNamespace>
-    <AssemblyName>Dukou.Cryptography</AssemblyName>
+    <RootNamespace>Dukou</RootNamespace>
+    <AssemblyName>Dukou.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,25 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\_lib\CommonAssemblyInfo.cs">
-      <Link>Properties\CommonAssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="DESedeExtension.cs" />
-    <Compile Include="DESExtension.cs" />
-    <Compile Include="IDESedeKeyAndIVGenerator.cs" />
-    <Compile Include="IDESKeyAndIVGenerator.cs" />
-    <Compile Include="IMD5KeyAndSaltGenerator.cs" />
-    <Compile Include="MD5Extension.cs" />
+    <Compile Include="Extensions\ByteArrayExtension.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Extensions\StringFormatTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Dukou.Cryptography.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Dukou.Core\Dukou.Core.csproj">
-      <Project>{16c89c48-98a7-46bd-88d5-c9bf8994b2e3}</Project>
-      <Name>Dukou.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
