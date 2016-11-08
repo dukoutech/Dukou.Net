@@ -5,5 +5,7 @@
 /.vs
 /*/bin
 /*/obj
+/*/*/bin
+/*/*/obj
 /nupkgs/*.nupkg
 /packages

@@ -8,8 +8,8 @@ namespace Dukou.Cryptography
 {
     public interface IDESedeKeyAndIVGenerator
     {
-        string GenerateKey();
-
         string GenerateIV();
+
+        string GenerateKey();
     }
 }

@@ -51,6 +51,9 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="KeyGenerators\DefaultDESedeKeyAndIVGenerator.cs" />
+    <Compile Include="KeyGenerators\DefaultDESKeyAndIVGenerator.cs" />
+    <Compile Include="KeyGenerators\DefaultMD5KeyAndSaltGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.resx">
@@ -77,6 +80,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KeyGenerators\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dukou.Cryptography\Dukou.Cryptography.csproj">
+      <Project>{08bdee00-166d-4a0d-81f7-00ec119340f1}</Project>
+      <Name>Dukou.Cryptography</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
