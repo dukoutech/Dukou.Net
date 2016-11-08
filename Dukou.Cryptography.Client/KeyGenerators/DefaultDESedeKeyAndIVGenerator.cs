@@ -7,17 +7,19 @@ using System.Threading.Tasks;
 
 namespace Dukou.Cryptography.Client.KeyGenerators
 {
-    [Description("默认DESede密钥和向量生成器")]
+    [Description("默认DESede密钥生成器")]
     public class DefaultDESedeKeyAndIVGenerator : IDESedeKeyAndIVGenerator
     {
+        private static readonly string KEY = "ovsEneD+v2iM06tbrcd/dYMlHw3aBy8p";
+
         public string GenerateIV()
         {
-            throw new NotImplementedException();
+            return KEY;
         }
 
         public string GenerateKey()
         {
-            throw new NotImplementedException();
+            return KEY;
         }
     }
 }
