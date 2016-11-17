@@ -15,6 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_lib", "_lib", "{69D1C657-62EB-4660-AD6A-79CBF577F3B1}"
+	ProjectSection(SolutionItems) = preProject
+		_lib\CommonAssemblyInfo.cs = _lib\CommonAssemblyInfo.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nupkgs", "nupkgs", "{61E45A98-384B-4E05-BC38-61A763FE4C49}"
 	ProjectSection(SolutionItems) = preProject
