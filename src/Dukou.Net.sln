@@ -1,18 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.25914.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SH4", "Dukou.SH4\Dukou.SH4.csproj", "{12BEFCA5-CDEC-4FAE-A67F-365B6BA883A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Cryptography", "Dukou.Cryptography\Dukou.Cryptography.csproj", "{08BDEE00-166D-4A0D-81F7-00EC119340F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Config", "Dukou.Config\Dukou.Config.csproj", "{D99433CB-8D69-49BE-A81B-08D7291DB988}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC694B54-7493-479A-9F05-8E0BD5CA8EFF}"
-	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_lib", "_lib", "{69D1C657-62EB-4660-AD6A-79CBF577F3B1}"
 	ProjectSection(SolutionItems) = preProject
