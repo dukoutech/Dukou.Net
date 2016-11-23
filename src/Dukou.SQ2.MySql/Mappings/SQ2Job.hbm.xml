@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Dukou.SQ2" namespace="Dukou.SQ2.PO">
+
+  <class name="SQ2Job" table="SQ2_JOBS">
+    <id name="Id">
+      <column name="ID"></column>
+      <generator class="native"></generator>
+    </id>
+
+    <property name="JobName" column="JOBNAME"></property>
+    <property name="IP" column="IP"></property>
+    <property name="IsMaster" column="ISMASTER"></property>
+    <property name="UpdateTime" column="UPDATETIME"></property>
+
+  </class>
+
+  <sql-query name="SP_SQ2_REGISTERMASTER">
+    call SP_SQ2_REGISTERMASTER(:JobName, :IP)
+  </sql-query>
+  
+</hibernate-mapping>
