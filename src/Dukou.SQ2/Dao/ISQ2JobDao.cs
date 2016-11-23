@@ -10,7 +10,7 @@ namespace Dukou.SQ2.Dao
 {
     public interface ISQ2JobDao : IHibernateDao<SQ2Job, long>
     {
-        IList<SQ2Job> FindByIsMaster(bool isMaster);
+        IList<SQ2Job> FindByJobName(string jobName);
 
         SQ2Job FindByJobNameAndIP(string jobName, string ip);
     }

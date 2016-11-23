@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{96DC91FF-2BF4-4148-8EEB-B3F30942CA7E}</ProjectGuid>
+    <ProjectGuid>{0DADF3E6-E6EB-41BC-8972-7FAD6AE45935}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dukou.SQ2.MySql</RootNamespace>
-    <AssemblyName>Dukou.SQ2.MySql</AssemblyName>
+    <RootNamespace>Dukou.SQ2.Demo</RootNamespace>
+    <AssemblyName>Dukou.SQ2.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,10 +46,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mappings\SQ2Job.hbm.xml" />
+    <Content Include="Config\app.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\log4net.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Dukou.SQ2.MySql.nuspec" />
+    <None Include="Dukou.SQ2.Demo.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{83735C4A-3396-48A2-A5C1-737CCF71CAFC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Dukou.SQ2.WindowsService</RootNamespace>
-    <AssemblyName>Dukou.SQ2.WindowsService</AssemblyName>
+    <RootNamespace>Dukou.SQ2.WSHost</RootNamespace>
+    <AssemblyName>Dukou.SQ2.WSHost</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -78,6 +78,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\_lib\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="ServiceContainer.cs" />
     <Compile Include="ServiceInstallerConfig.cs" />
     <Compile Include="SQ2Service.cs">
@@ -91,24 +94,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Dukou.SQ2.WSHost.nuspec" />
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dukou.SQ2\Dukou.SQ2.csproj">
+      <Project>{c17ff9e6-dfcf-43ba-94bd-351922e79185}</Project>
+      <Name>Dukou.SQ2</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SQ2Service.resx">
       <DependentUpon>SQ2Service.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Config\app.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Config\log4net.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

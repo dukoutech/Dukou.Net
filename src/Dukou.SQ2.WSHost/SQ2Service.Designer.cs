@@ -1,4 +1,4 @@
-﻿namespace Dukou.SQ2.WindowsService
+﻿namespace Dukou.SQ2.WSHost
 {
     partial class SQ2Service
     {

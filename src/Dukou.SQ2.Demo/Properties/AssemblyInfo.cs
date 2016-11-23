@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Dukou.SQ2.MySql")]
-[assembly: AssemblyDescription("Dukou.Net 集成 Spring.Scheduling.Quartz2 MySql")]
+[assembly: AssemblyTitle("Dukou.SQ2.Demo")]
+[assembly: AssemblyDescription("Dukou.Net 集成 Spring.Scheduling.Quartz2 演示")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -17,4 +17,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("96dc91ff-2bf4-4148-8eeb-b3f30942ca7e")]
+[assembly: Guid("0dadf3e6-e6eb-41bc-8972-7fad6ae45935")]

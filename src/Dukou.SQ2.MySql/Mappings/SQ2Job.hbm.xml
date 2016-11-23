@@ -10,12 +10,9 @@
     <property name="JobName" column="JOBNAME"></property>
     <property name="IP" column="IP"></property>
     <property name="IsMaster" column="ISMASTER"></property>
+    <property name="Priority" column="PRIORITY"></property>
     <property name="UpdateTime" column="UPDATETIME"></property>
 
   </class>
 
-  <sql-query name="SP_SQ2_REGISTERMASTER">
-    call SP_SQ2_REGISTERMASTER(:JobName, :IP)
-  </sql-query>
-  
 </hibernate-mapping>

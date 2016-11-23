@@ -15,6 +15,13 @@ namespace Dukou.SQ2.PO
 
         public virtual bool IsMaster { get; set; }
 
+        public virtual int Priority { get; set; }
+
         public virtual DateTime UpdateTime { get; set; }
+
+        public virtual void ChangePriority()
+        {
+            Priority = (new Random(Guid.NewGuid().GetHashCode())).Next(1000000000);
+        }
     }
 }

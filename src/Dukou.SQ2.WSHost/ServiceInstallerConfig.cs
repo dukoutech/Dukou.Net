@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dukou.SQ2.WindowsService
+namespace Dukou.SQ2.WSHost
 {
     public class ServiceInstallerConfig
     {

@@ -10,7 +10,7 @@ namespace Dukou.SQ2.Dao.Impl
 {
     public class SQ2JobDao : HibernateDao<SQ2Job, long>, ISQ2JobDao
     {
-        public IList<SQ2Job> FindByIsMasterAndIP(bool isMaster, string ip)
+        public IList<SQ2Job> FindByJobName(string jobName)
         {
             throw new NotImplementedException();
         }

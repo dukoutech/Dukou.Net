@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Dukou.SH4")]
-[assembly: AssemblyDescription("Dukou.Net 集成Spring.Data.NHibernate4")]
+[assembly: AssemblyDescription("Dukou.Net 集成 Spring.Data.NHibernate4")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

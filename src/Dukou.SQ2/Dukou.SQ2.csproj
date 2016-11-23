@@ -80,6 +80,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\_lib\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="AbstractQuartzJobObject.cs" />
     <Compile Include="Dao\Impl\SQ2JobDao.cs" />
     <Compile Include="Dao\ISQ2JobDao.cs" />
@@ -88,9 +91,12 @@
     <Compile Include="Jobs\SQ2JobMonitorService.cs" />
     <Compile Include="PO\SQ2Job.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Impl\SQ2JobService.cs" />
+    <Compile Include="Service\ISQ2JobService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Dukou.SQ2.nuspec" />
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>

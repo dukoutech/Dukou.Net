@@ -29,9 +29,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.Cryptography.Client",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SQ2", "Dukou.SQ2\Dukou.SQ2.csproj", "{C17FF9E6-DFCF-43BA-94BD-351922E79185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SQ2.WindowsService", "Dukou.SQ2.WindowsService\Dukou.SQ2.WindowsService.csproj", "{83735C4A-3396-48A2-A5C1-737CCF71CAFC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SQ2.MySql", "Dukou.SQ2.MySql\Dukou.SQ2.MySql.csproj", "{96DC91FF-2BF4-4148-8EEB-B3F30942CA7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SQ2.Demo", "Dukou.SQ2.Demo\Dukou.SQ2.Demo.csproj", "{0DADF3E6-E6EB-41BC-8972-7FAD6AE45935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dukou.SQ2.WSHost", "Dukou.SQ2.WSHost\Dukou.SQ2.WSHost.csproj", "{83735C4A-3396-48A2-A5C1-737CCF71CAFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,14 +69,18 @@ Global
 		{C17FF9E6-DFCF-43BA-94BD-351922E79185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17FF9E6-DFCF-43BA-94BD-351922E79185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17FF9E6-DFCF-43BA-94BD-351922E79185}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{96DC91FF-2BF4-4148-8EEB-B3F30942CA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{96DC91FF-2BF4-4148-8EEB-B3F30942CA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96DC91FF-2BF4-4148-8EEB-B3F30942CA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96DC91FF-2BF4-4148-8EEB-B3F30942CA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DADF3E6-E6EB-41BC-8972-7FAD6AE45935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DADF3E6-E6EB-41BC-8972-7FAD6AE45935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DADF3E6-E6EB-41BC-8972-7FAD6AE45935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DADF3E6-E6EB-41BC-8972-7FAD6AE45935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83735C4A-3396-48A2-A5C1-737CCF71CAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

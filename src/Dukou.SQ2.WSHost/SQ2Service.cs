@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Dukou.SQ2.WindowsService
+namespace Dukou.SQ2.WSHost
 {
     public partial class SQ2Service : ServiceBase
     {
